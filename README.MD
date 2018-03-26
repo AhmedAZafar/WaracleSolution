@@ -1,16 +1,9 @@
-Coding Test (fictitious)
+Following are the steps that I didn't do but would prefer to:-
 
+1. If allowed, setup Carthage & use AlamoFire & AlamoFireImage for downloading data & images.
 
-***
-NOTE: PLEASE DO NOT USE THIRD PARTY LIBRARIES. However, feel free to state which third party libraries you might have used.
-***
+2. If third party libraries are not allowed, create a Static Library called 'CakeWebService' with CakeDataService & CakeImageService classes that provide methods for specific requests. The classes woould be implemented as Singletons and view controllers would be able to use the singleton by conforming to CakeDataServiceProtocol & CakeImageServiceProtocol. This is to make the code base more modular.
 
-Here you'll find the code for a simple mobile app to browse cakes. 
+3. Implement Unit tests & xctests
 
-Unfortunately, the developer who wrote this code is no longer employed by the company as we had some concerns over his ability. 
-
-The project compiles but the app crashes as soon as it runs. The app loads a JSON feed containing a repeated list of cakes, with title, image and description from a URL, then displays the contents of the feed in a scrollable list. 
-
-We would like you to fix the crash bug, ensure the functionality of the app works as expected (all images display correctly on the table, all text is readable) and performs smoothly (ideally, this should be done without third party libraries). You should also refactor, optimise and improve the code where appropriate to use platform best practises. 
-
-Please note that we are not looking for perfection, but rather for a clean and pragmatic solution. This should include refactoring but shouldn’t be over engineered. The test can be completed in 2-3 hours; howerever, this is a not a limit. Feel free to spend more time on it if you wish.
+4. Prefer to write all this in Swift using Protocol Oriented Programming following MVVM design pattern with FRP.
